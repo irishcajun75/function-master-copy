@@ -4,8 +4,8 @@ describe("Be the Test Master", () => {
     let stringValue = "I am a string";
     let numberValue = 484;
 
-    assert.equal(stringValue, "???");
-    assert.equal(numberValue, "???");
+    assert.equal(stringValue, "I am a string");
+    assert.equal(numberValue, "484");
   });
 
   // Test #2
@@ -19,13 +19,13 @@ describe("Be the Test Master", () => {
 
     yay();
 
-    assert.equal(outside_the_function, "???");
+    assert.equal(outside_the_function, "can you see me?");
   });
 
   // Test #3
   it("Function parameters become scoped to the function", () => {
     function yay(param) {
-      assert.equal(param, "???");
+      assert.equal(param, "a fine kettle of fish");
     }
 
     yay("a fine kettle of fish");
@@ -49,7 +49,7 @@ describe("Be the Test Master", () => {
     } else {
       has_kix = "i prefer cheerios";
     }
-    assert.equal(has_kix, "???");
+    assert.equal(has_kix, "i prefer cheerios");
   });
 
   // Test #5
@@ -63,7 +63,7 @@ describe("Be the Test Master", () => {
       if (this.from_yay !== undefined) {
         in_foo = this.from_yay;
       }
-      assert.equal(in_foo, "???");
+      assert.equal(in_foo, "i'm in foo");
       assert.equal(this.from_yay, "???");
     }
     yay();
